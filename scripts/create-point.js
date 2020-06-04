@@ -54,6 +54,24 @@ for (item of itemsToCollect) {
   item.addEventListener("click", handleSelectedItem);
 }
 
+let selectedItems = [];
+
 function handleSelectedItem(event) {
-  console.log(event.target.dataset.id);
+  const itemsInput = document.querySelector("input[name=items]");
+
+  // add and remove class in one tag/component
+  event.target.classList.toggle("selected");
+
+  const dataId = event.target.dataset.id;
+
+  itemAlreadyExist = selectedItems.find((f) => f === dataId);
+
+  if (itemAlreadyExist) {
+    removedItem = selectedItems.filter((f) => f !== dataId);
+    selectedItems = removedItem;
+  } else selectedItems.push(dataId);
+
+  itemsInput.value = selectedItems;
+
+  console.log(itemsInput.value);
 }
