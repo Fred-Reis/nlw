@@ -1,0 +1,17 @@
+{
+  "name": "day_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Fred-Reis/nlw.git",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
