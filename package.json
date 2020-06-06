@@ -12,7 +12,6 @@
     "nunjucks": "^3.2.1"
   },
   "devDependencies": {
-    "git-commit-msg-linter": "^2.4.2",
     "nodemon": "^2.0.4"
   }
 }
