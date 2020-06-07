@@ -1,2 +1,1 @@
-fasf;
-wsd;
+console.log("ok");
